@@ -1,0 +1,6 @@
+{
+  "name": "Coastal Motion STUDIO 2.5",
+  "description": "Estudio visual IA de generación cinematográfica con Seedance 2.5, Higgsfield Cloud y preparación directa para Instagram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

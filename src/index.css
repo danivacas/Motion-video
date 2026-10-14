@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-space: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-manrope: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-manrope);
+    background-color: #0b0f12;
+    color: #e0e3e7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-space);
+  }
+
+  code, pre, .font-tech, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2023;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #313539;
+}
+
+/* Glowing citrus accent utilities */
+.glow-citrus {
+  box-shadow: 0 0 16px -2px rgba(212, 255, 58, 0.35);
+}
+
+.glow-citrus-sm {
+  box-shadow: 0 0 8px rgba(212, 255, 58, 0.25);
+}
+
+.glass-panel {
+  background: rgba(26, 34, 45, 0.72);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: #181c1f;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
